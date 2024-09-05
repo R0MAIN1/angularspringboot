@@ -1,0 +1,25 @@
+<form id="dynamic-form" class="form-container">
+  <h1>Saisir Agence Compte</h1> <!-- Titre mis à jour -->
+  <p><br></p>
+  <div class="form-group">
+    <div class="input-row">
+      <div class="input-group">
+        <label for="account-id-1">
+          Agence
+        </label>
+        <input type="text" name="account-id-1" id="account-id-1" maxlength="10" oninput="controlInputNumber(event)" pattern="[0-9]*">
+        <small>3 à 10 chiffres</small> <!-- Indication mise à jour -->
+      </div>
+      <div class="input-group">
+        <label for="account-id-2">
+          Compte
+        </label>
+        <input type="text" name="account-id-2" id="account-id-2" maxlength="6"> <!-- Placeholder ajouté -->
+        <small>4 à 6 chiffres et une lettre</small> <!-- Indication mise à jour -->
+      </div>
+    </div>
+  </div>
+  <div class="form-actions">
+    <button type="submit" class="btn-submit">Valider</button>
+  </div>
+</form>

@@ -1,0 +1,165 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  max-width: 550px;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  margin-bottom: 20px; /* Marge ajustée pour le titre */
+  color: #1f368b;
+  font-size: 1.8rem; /* Taille de la police augmentée */
+}
+
+p {
+  margin-bottom: 20px; /* Marge pour le message */
+  color: #333;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333; /* Couleur neutre pour les labels */
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+}
+
+.input-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.input-row input[type="text"] {
+  width: 100%;
+  padding: 10px; /* Padding ajusté pour une meilleure apparence */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-row input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.input-row input[type="text"].ng-invalid.ng-touched {
+  border-color: red;
+}
+
+small {
+  color: #888;
+  margin-top: 5px; /* Marge pour l'indication */
+  font-size: 0.9rem; /* Taille de la police ajustée */
+}
+
+small.ng-invalid.ng-touched {
+  color: red;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px; /* Marge augmentée pour plus d'espace */
+}
+
+.tooltip {
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%; /* Position au-dessus de l'élément */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.bouton {
+  border: 1px solid #d1d3fc;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem; /* Augmenter la taille de la police */
+  padding-top: 10px; /* Augmenter le padding en haut */
+  padding-bottom: 10px; /* Augmenter le padding en bas */
+  background: #4460b3;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px #d4d4d4;
+}
+
+
+.btn-submit {
+  display: inline-block;
+  width: auto;
+  padding: 8px 16px; /* Réduction du padding */
+  background: #4460b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px; /* Réduction de la taille de la police */
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
